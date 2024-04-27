@@ -1,2 +1,2 @@
 # SimpleRpc
-A simple ppc project
+A simple rpc project
