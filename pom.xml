@@ -27,8 +27,9 @@
         <protostuff-runtime.version>1.0.9</protostuff-runtime.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <objenesis.version>3.3</objenesis.version>
-        <zookeeper.version>3.6.0</zookeeper.version>
+        <zookeeper.version>3.9.1</zookeeper.version>
         <zkclient.version>0.10</zkclient.version>
+        <spring.version>5.2.8.RELEASE</spring.version>
     </properties>
 
     <dependencies>
@@ -41,6 +42,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
